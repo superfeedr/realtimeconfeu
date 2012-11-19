@@ -653,6 +653,18 @@ cite {
       font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
       font-size: 2em; }
 
+#details {
+  }
+  #details h3 {
+    color: #fccf6a;
+    font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
+    font-weight: 100;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 black;
+    margin-bottom: 10px; }
+
+
 #kyle_quote {
   clear: both;
   padding: 20px 0;
