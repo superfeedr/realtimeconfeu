@@ -1,0 +1,978 @@
+@import reset
+@import frameless
+
+$teal: #20bedb
+$dteal: #027C93
+$gold: #D9A302
+
+$top-glow: url(/images/section-top-glow.png) top left no-repeat
+$bottom-shadow: url(/images/section-bottom-shadow.png) bottom left no-repeat
+
+$header-font: "franklin-gothic-ext-comp-urw-1","franklin-gothic-ext-comp-urw-2", sans-serif
+$reg-font: "franklin-gothic-urw-1","franklin-gothic-urw-2", sans-serif
+
+$blue-text-shadow: 0 -1px 0 #007cb5
+$black-text-shadow: 0 1px 0 #000
+
+.teal
+    color: $teal
+
+body
+    background: #111
+    font:
+        family: $reg-font
+        weight: 300
+        
+a
+    color: $teal
+    
+    &:hover
+        color: lighten($teal, 20)
+
+h2
+    font:
+        family: $header-font
+        weight: 100
+        size: ($font-size * 3.5)/$em
+    text:
+        transform: uppercase
+        align: center
+        shadow: $black-text-shadow
+    letter-spacing: 1px
+    color: #e9e9e9
+    margin: 20px 0 25px
+    
+h4
+    font:
+        family: $reg-font
+        weight: 100
+        size: ($font-size * 2)/$em
+    text:
+        align: center
+        transform: uppercase
+        
+.wrapper
+    width: $cols12
+    margin: 0 auto
+    
+header
+    background: #21beda
+    display: block
+    padding: 80px 0 78px 0
+    
+    h1
+        background: url(/images/realtimeconfeu.png)
+        width: 500px
+        height: 216px
+        display: block
+        text:
+            indent: -9999em
+        margin: 0 auto
+        _margin: 0 auto -50px
+        
+    #date
+        font:
+            family: $header-font
+            weight: 100
+        color: #fff
+        list-style: none
+        margin: 30px auto 0
+        width: 370px
+        height: 52px
+        display: block
+        text:
+            align: center
+            transform: uppercase
+            shadow: $black-text-shadow
+        
+        li
+            font:
+                size: ($font-size + 24)/$em !important
+            border: 
+                right: 3px solid #1caac4
+            display: inline-block
+            *display: inline
+            zoom: 1
+            height: 100%
+            padding:
+                right: 10px
+                top: 8px
+            letter-spacing: 0
+        
+        li + li
+            border:
+                right: 0
+            padding:
+                right: 0
+                left: 10px
+    
+    nav
+        height: 53px
+        width : 615px
+        display: block
+        background:
+            image: url('http://static.realtimeconf.com/images/ribbon.png')
+            repeat: no-repeat
+            position: 1px 5px
+        margin: 40px auto
+        position: absolute
+        z-index: 600
+        top: 380px
+        left: 50%
+        margin-left: -307px
+        
+        a
+            color: #fff
+            font:
+                family: $header-font
+                weight: 100
+                size: ($font-size * 2)/$em
+            text:
+                transform: uppercase
+                decoration: none
+                shadow: $black-text-shadow
+            vertical-align: top
+            outline: none
+            
+            &:hover
+                color: #fff
+                
+        #speakers_link, #schedule_link 
+            position: absolute
+            top: 15px
+            
+            &:hover
+                transform: scale(1.1)
+            
+        #speakers_link
+            left: 35px
+            text-align: left
+            
+        #schedule_link
+            right: 35px
+            text-align: right
+            
+        #get_tickets
+            width: 300px
+            height: 70px
+            display: block
+            position: relative
+            background: #d9a302
+            background: linear-gradient(top, #edc85d 0%,#d9a302 100%)
+            border-radius: 15px
+            text:
+                align: center
+                shadow: -1px -1px 0 #b08301
+            margin: 0 auto
+            font:
+                size: ($font-size * 4)/$em
+            line-height: 70px
+            border:
+                top: 1px solid #fff
+            box:
+                shadow: 0 1px 2px #555
+            z-index: 1000
+            bevahior: url('css/pie.htc')
+                
+            span
+                position: absolute
+                bottom: -27px
+                left: 120px
+                width: 60px
+                height: 25px
+                background: #edc85d
+                background: linear-gradient(top, #d9a302 0%,#edc85d 100%)
+                font:
+                    family: 'georgia', 'palatino', 'palatino linotype', 'times new roman', serif
+                    size: ($font-size / 3.5)/$em
+                    style: italic
+                    weight: 300
+                line-height: 20px
+                letter-spacing: 1px
+                border:
+                    top: 1px solid #c39306
+                    bottom-left-radius: 5px
+                    bottom-right-radius: 5px
+                bevahior: url('css/pie.htc')
+            
+#content
+    background-color: #222
+    border-top: 1px solid #777
+    // border-top: 1px solid #21beda + #333
+    box-shadow: 0 -1px 20px rgba(0,0,0,.5)
+    padding-top: 0px
+    
+    .wrapper
+        font-size: $font-size
+        white-space: nowrap
+        
+section
+    white-space: normal
+
+cite
+    font:
+        family: $header-font
+        weight: 300
+        size: 36px
+        style: normal
+    letter-spacing: 1px
+    color: #fccf6a
+    text-transform: uppercase
+    margin-left: 20px
+    text-shadow: $blue-text-shadow
+
+#schedule, aside
+    display: inline-block
+    *display: inline
+    zoom: 1
+    width: $cols6
+    vertical-align: top
+    color: #eee
+    white-space: normal
+    
+.space
+    padding: 10px 20px
+    display: block
+    
+#info
+    text-align: center
+
+.speakers
+    background: $bottom-shadow
+    border-bottom: 2px solid #000
+    border-top: 0
+    padding: 80px 0 20px 0
+
+.sponsors
+    background: $bottom-shadow
+    border-top: 1px solid #404040
+    border-bottom: 2px solid #000
+    padding: 20px 0 80px 0
+    margin: 0 auto
+    
+
+    p
+        color: #666
+        font-size: 1em !important
+
+    ul
+        list-style-type: none
+    
+        li
+            display: inline-block
+            *display: inline
+            zoom: 1
+            font-size: $font-size
+            margin:
+                right: 30px
+                top: 0
+            padding-top: 0
+
+            img
+                margin-top: 0
+                padding-top: 0
+
+        li
+            *display: inline
+            zoom: 1
+
+        li:last-child
+            margin-right: 0
+
+.speakers ul
+    list-style-type: none
+    text-align: left
+    margin: 0 10px 20px
+    
+    & > li
+        display: inline-block
+        *display: inline
+        zoom: 1
+        width: ($cols2 + 3.75)
+        margin:
+            bottom: 30px
+    li
+        *display: inline
+        zoom: 1
+
+        &.right
+            text-align: right
+
+            img
+                float: right
+
+        &:nth-child(4n)
+            margin-left: 10px
+        
+    div, img
+        display: inline-block
+        *display: inline
+        zoom: 1
+        vertical-align: top
+    
+    img
+        width: 80px
+        height: 80px
+        background-color: #111
+        border-bottom: 1px solid #333
+        border-top: 1px solid #111
+
+    svg
+        width: 16px
+        height: 16px
+        margin-left: 6px
+        margin-bottom: -1px
+
+        path
+            fill: #999
+            box-shadow: 0 1px 1px #222
+
+            &:hover
+                fill: #ccc
+    
+    .speakerDetails
+        width: 120px
+        padding: 0 10px
+        text-shadow: $black-text-shadow
+        color: #cecece
+        line-height: 115%
+        margin-top: -2px
+        
+        strong
+            display: block
+            font-size: 16px
+            line-height: 140%
+            margin-bottom: 5px
+            
+        em
+            display: block
+            color: #999
+            font:
+                size: 12px
+                style: normal
+                
+    .social-link
+        text-decoration: none
+
+.speakers
+    h4
+        font-family: $header-font
+        margin-bottom: 20px
+
+    h4 + p
+        color: #bbb
+        font:
+            size: 14px !important
+            weight: normal
+            style: italic
+
+        svg
+            width: 11px
+            height: 11px
+
+#view_abstracts
+    color: $teal
+    text:
+        align: center
+        
+    &:hover
+        color: lighten($teal, 20)
+
+#details, #what-is-it, #venue, #redisconf
+    color: #eee
+    margin: 0 10px
+    
+    p
+        line-height: 130%
+        letter-spacing: .4px
+        margin:
+            bottom: 30px
+        font:
+            size: ($font-size + 4)/$em
+
+#details
+    #panel-discussion
+        position: relative
+        z-index: 1
+
+    div.blue-ribbon
+        bottom: 100px
+        left: -25px
+        background: url(/images/blue-ribbon-quote.png) top left no-repeat
+        line-height: 55px
+        width: 990px
+        height: 56px
+        position: relative
+        z-index: 100
+        float: left
+
+        span
+            display: inline-block
+            float: left
+
+            &.quote
+                text-shadow: $blue-text-shadow
+                font-size: 32px
+                font-weight: bold
+                padding-left: 80px
+
+#what-is-it, #redisconf
+    background: $bottom-shadow, $top-glow
+    margin-top: -1px
+    padding-top: 20px
+
+    h2
+        margin-top: 0
+        font-weight: bold
+
+    .block
+        padding:
+            bottom: 30px
+
+        &.half
+            width: 450px
+            float: left
+            padding-left: 20px
+
+            h3
+                color: #fccf6a
+                font:
+                    family: $header-font
+                    weight: bold
+                    size: 2.5em
+                letter-spacing: 1px
+                text-shadow: $black-text-shadow
+                text-align: center
+                width: 100%
+                margin-bottom: 20px
+
+#signup
+    width: 100%
+    text-align: center
+    clear: both
+    padding-bottom: 20px
+    border-bottom: 2px solid #000
+    background: $bottom-shadow
+
+    form
+        position: relative
+
+    label
+        text-transform: uppercase
+        font:
+            family: $header-font
+            size: 32px
+            weight: normal
+        letter-spacing: 1px
+        text-shadow: $black-text-shadow
+        line-height: 34px
+        margin-right: 15px
+        vertical-align: middle
+
+    #email_unhappy
+        position: absolute
+        top: -20px
+        left: 427px
+        font-style: italic
+
+    input[type="text"]
+        color: #222
+        width: 290px
+        height: 20px
+        padding: 3px 2px
+        vertical-align: top
+        margin:
+            top: 4px
+            right: 10px
+            
+    input[type="submit"]
+        width: 120px
+        height: 40px
+        line-height: 34px
+        padding: 0
+        margin: 0
+        border:
+            top: 1px solid #aeaeae
+            right: 1px solid #202020
+            bottom: 1px solid #2a2a2a
+            left: 1px solid #202020
+        background: #303030
+        background: linear-gradient(top, #5a5a5a 0%,#303030 100%)
+        color: #eee
+        outline: 0
+        vertical-align: top
+        font:
+            family: $header-font
+            weight: 100
+            size: ($font-size + 14)/$em
+        text:
+            transform: uppercase
+            shadow: $black-text-shadow
+        letter-spacing: .5px
+        border-radius: 7px
+        bevahior: url('css/pie.htc')
+    
+#people-say-video
+    margin: 0 10px
+    border-top: 1px solid #404040
+    border-bottom: 2px solid #000
+    position: relative
+
+    blockquote
+        color: #fff
+        text-shadow: $blue-text-shadow
+        font-size: 32px
+        font-weight: bold
+        padding: 30px 50px 0 0
+        width: 450px
+        float: left
+
+    cite
+        display: block
+        margin-top: 10px
+        margin-left: 0
+
+    h4
+        color: #fff
+        font:
+            family: $header-font
+            size: 36px
+        position: absolute
+        bottom: 20px
+        right: 460px
+        text:
+            transform: uppercase
+            shadow: $blue-text-shadow
+        background: url(/images/see-for-yourself.png) top left no-repeat
+        line-height: 53px
+        height: 56px
+        width: 250px
+
+#redisconf
+    background: $top-glow, $bottom-shadow
+    float: left
+    clear: both
+    padding-top: 40px
+    margin-top: 0
+    border-bottom: 2px solid #000
+
+    img
+        margin: -40px auto 0
+
+    h2
+        width: 300px
+        height: 300px
+        background: url(/images/redisconf_logo.png) no-repeat top left
+        background-size: contain
+        text-indent: -999em
+        margin: -40px auto 0
+
+    .block
+        padding-bottom: 10px
+
+#venue
+    background: $bottom-shadow, $top-glow
+    border-bottom: 2px solid #000
+    padding-bottom: 30px
+    padding-top: 30px
+    margin: 0 10px
+    clear: both
+
+    div.location
+        clear: both
+
+    img
+        float: left
+        margin-right: 30px
+        margin-bottom: 20px
+
+    h3
+        color: #fccf6a
+        font:
+            family: $header-font
+            weight: 100
+            size: 2.2em
+        letter-spacing: 1px
+        text-shadow: $black-text-shadow
+        margin-bottom: 10px
+
+    p
+        font-size: 1.15em
+
+        a.book
+            text-transform: uppercase
+            font:
+                family: $header-font
+                size: 2em
+
+#kyle_quote
+    clear: both
+    padding: 20px 0
+    margin: 0 10px
+    position: relative
+    border-bottom: 2px solid #000
+    width: 940px
+    overflow: visible
+
+    blockquote
+        background: url(/images/drake-quote-ribbon.png) top left no-repeat
+        width: 950px
+        height: 105px
+        color: #fff
+        font:
+            size: 2em
+            weight: bold
+        margin-left: -20px
+        padding-left: 50px
+        padding-top: 10px
+        text-shadow: $blue-text-shadow
+
+        cite
+            display: block
+            position: absolute
+            right: 25px
+            top: 90px
+            text-shadow: $blue-text-shadow
+
+#from_the_blog
+    background: $bottom-shadow, $top-glow
+    border-top: 1px solid #404040
+    border-bottom: 2px solid #000
+    margin: 0 10px
+    clear: both
+    position: relative
+    height: 145px
+
+    h2
+        width: 450px
+        padding-right: 20px
+        display: inline-block
+        text-align: right
+        line-height: 145px
+        margin: 0
+
+    ul.blog_listing
+        list-style-type: none
+        position: absolute
+        left: 490px
+        top: 20px
+
+        li
+            color: #eee
+            padding: 8px 0
+            font-size: 1.1em
+
+#geoff_quote, #sponsor-info
+    border-top: 1px solid #404040
+    border-bottom: 2px solid #000
+    margin: 1px 10px 0
+    clear: both
+    position: relative
+    height: 270px
+
+    img
+        margin-top: -1px
+
+    blockquote
+        position: absolute
+        left: 495px
+        top: 78px
+        color: #fff
+        font:
+            size: 2em
+            weight: bold
+        text-shadow: $blue-text-shadow
+
+        cite
+            display: block
+            margin: 10px 0
+
+#sponsor-info
+    height: auto
+    padding-bottom: 40px
+
+    h4
+        color: #ddd
+        font-family: $header-font
+
+#mike_quote
+    background: $top-glow
+    border-top: 1px solid #404040
+    text-align: center
+    padding: 100px 30px 20px
+    margin: 0 10px
+
+    blockquote
+        color: #fff
+        font:
+            size: 2em
+            weight: bold
+        text-shadow: $blue-text-shadow
+
+        cite
+            display: block
+            margin: 10px auto 0
+
+
+footer
+    clear: both
+    background:
+        image: url('http://static.realtimeconf.com/images/footer_bg.jpg')
+        repeat: repeat-x
+    overflow-y: hidden
+    margin:
+        bottom: 60px
+
+    .wrapper
+        background:
+            image: url('http://static.realtimeconf.com/images/footer.jpg')
+            position: center top
+            repeat: no-repeat
+        height: 220px
+        display: block
+        position: relative
+            
+    h5
+        width: 300px
+        height: 80px
+        display: block
+        background: #d9a302
+        background: linear-gradient(top, #edc85d 0%,#d9a302 100%)
+        position: absolute
+        top: 30px
+        left: 50%
+        margin-left: -150px
+        box-shadow: 0 2px 2px #000
+        bevahior: url('css/pie.htc')
+        line-height: 75px
+        color: #eee
+        letter-spacing: 1px
+        text:
+            align: center
+            shadow: 0 -1px 0px #999
+            transform: uppercase
+        border:
+            radius: 80px
+            top: 1px solid #fff
+        font:
+            family: $header-font
+            size: ($font-size * 3.75)/$em
+            weight: normal
+
+        a
+            color: #eee
+            text-decoration: none
+
+            &:hover
+                color: #fff
+
+    p
+        color: #eee
+        position: relative
+        top: 130px
+        text-align: center
+
+    .wrapper + .wrapper 
+        height: auto
+        background: none
+        padding-bottom: 50px
+        border-top: 2px solid #111
+        background: $top-glow
+
+        h2
+            color: #ccc
+            text-shadow: 0 1px 1px #444
+            margin: 40px 0 25px
+            font:
+                weight: bold
+                family: $header-font
+
+        p
+            top: 0
+            color: #999
+            padding: 0 130px
+            line-height: 140%
+            font-size: 1.1em
+
+.ie8
+    footer em a
+        float: right !important
+
+.ie9
+    footer em a
+        float: none !important
+        
+#from_andyet
+    background: #eee
+    bottom: 0
+    box-shadow: 0 0 3px #000
+    right: 50px
+    padding: 3px 10px
+    position: fixed
+    text-decoration: none
+    outline: 0
+    border:
+        top: 1px solid #fff
+    
+    h2
+        background-image: url("http://static.realtimeconf.com/images/from_&yet.png")
+        background-repeat: no-repeat
+        height: 27px
+        line-height: 0
+        text-indent: -9999em
+        width: 79px
+        margin: 0
+        border: 0
+        text-decoration: none
+        box-shadow: 0 0 0 transparent
+    
+.promo_vid
+    margin:
+        bottom: -2px
+
+
+@media only screen and (max-width: 767px)
+    body, header, .wrapper, header h1, header #date, header nav, #what-is-it .block.half, #what-is-it h3, #kyle_quote, #kyle_quote blockquote, img, .promo_vid, #from_the_blog h2, #people-say-video blockquote, #redisconf .block.half
+        width: 100%
+        padding-left: 0
+        padding-right: 0
+
+    p
+        padding: 0 10px
+
+    .wrapper
+        margin: 0
+
+    header
+        height: 390px
+
+        h1
+            background-position: 0 0
+            background-size: contain
+            height: 232px
+
+        .wrapper
+            background-size: contain
+
+        nav
+            background: none
+
+            #get_tickets span
+                position: relative
+                left: 0
+
+    #info + img, #details div.blue-ribbon
+        display: none
+
+    .speakers ul
+        margin: 0
+
+        &>li
+            width: 100%
+            text-align: center
+
+            .speakerDetails
+                text-align: left
+
+    #details, #what-is-it, #venue, #from_the_blog, #geoff_quote, #mike_quote, #people-say-video, #kyle_quote, #redisconf
+        margin: 0
+        clear: both
+
+    #people-say-video, #kyle_quote
+        padding: 0 10px 30px
+        float: left
+
+    #venue
+        padding-top: 30px
+        clear: both
+
+        h3
+            margin-left: 10px
+
+    #kyle_quote
+        width: auto
+
+        blockquote
+            height: auto
+
+    #signup 
+        label
+            width: 100%
+            margin: 0
+
+        input[type="text"]
+            width: 80%
+            margin-right: 0
+
+    #kyle_quote
+        margin: 0
+        height: auto
+
+        blockquote
+            margin: 0
+            background: none
+
+            cite
+                position: relative
+                top: 0
+                right: 0
+
+    #redisconf 
+        h2
+            width: 250px
+
+    #from_the_blog
+        height: auto
+
+        ul
+            margin: 0 10px
+
+        h2
+            text-align: center
+            padding-right: 0
+            display: block
+
+    #from_the_blog ul.blog_listing, #geoff_quote blockquote
+        position: relative
+        top: 0
+        left: 0
+
+    #geoff_quote
+        height: auto
+
+    #mike_quote
+        padding: 10px
+
+    footer 
+        background: none
+        padding-top: 20px
+
+        .wrapper
+            height: auto
+            padding-bottom: 20px
+            background: none
+
+            &+ .wrapper p
+                padding: 10px
+
+        p
+            top: 0
+
+        h5
+            position: relative
+            top: 0
+            left: 0
+            text-align: center
+            width: 100%
+            margin: 0
+
+    #from_andyet
+        position: relative
+        display: block
+        width: 79px
+        height: 29px
+        right: 0
+
+    .mobile-hide
+        display: none !important
+>>>>>>> Stashed changes
