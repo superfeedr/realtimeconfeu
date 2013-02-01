@@ -550,7 +550,7 @@ cite {
     vertical-align: top;
     margin-top: 4px;
     margin-right: 10px; }
-  #signup input[type="submit"] {
+  #signup input[type="submit"], #signup input[type="button"] {
     width: 120px;
     height: 40px;
     line-height: 34px;
@@ -567,7 +567,7 @@ cite {
     vertical-align: top;
     font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
     font-weight: 100;
-    font-size: 1.875em;
+    font-size: 30px;
     text-transform: uppercase;
     text-shadow: 0 1px 0 black;
     letter-spacing: 0.5px;
