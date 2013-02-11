@@ -368,7 +368,8 @@ cite {
     color: #666666;
     font-size: 1em !important; }
   .sponsors ul {
-    list-style-type: none; }
+    list-style-type: none;
+  }
     .sponsors ul li {
       display: inline-block;
       *display: inline;
@@ -378,6 +379,7 @@ cite {
       margin-top: 0;
       padding-top: 0; }
       .sponsors ul li img {
+      vertical-align: middle;
         margin-top: 0;
         padding-top: 0; }
     .sponsors ul li {
@@ -385,6 +387,15 @@ cite {
       zoom: 1; }
     .sponsors ul li:last-child {
       margin-right: 0; }
+    .sponsors ul.chef li {
+    }
+    .sponsors ul.cuisinier li {
+
+    }
+    .sponsors ul.cuistot li {
+      vertical-align: middle;
+      width: 200px;
+    }
 
 .speakers ul {
   list-style-type: none;
