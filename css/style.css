@@ -213,14 +213,14 @@ h4 {
   margin: 0 auto; }
 
 header {
-  background: url(/images/map-placeholder.jpg) top center no-repeat #ebe6dc;
-  border-bottom: 3px solid #dcd9d2;
+  background: url(/images/headermap.png) top center no-repeat #eae6d5;
+  border-bottom: 1px solid #bcc9c9;
   display: block;
   height: 550px;
   position: relative; }
   header .banner {
     background: rgba(101, 157, 201, 0.85);
-    box-shadow: 0 1px 2px #555555;
+    box-shadow: 0 6px 2px -2px #cccccc;
     height: 575px;
     left: 50%;
     margin: -5px 0 0 -30em;
