@@ -361,7 +361,6 @@ header {
   background: white;
   padding: 30px 0 100px; }
   #content .wrapper {
-    border-top: 1px solid #dedbce;
     font-size: 16px;
     white-space: nowrap; }
 
@@ -395,13 +394,17 @@ cite {
   text-align: center; }
 
 .sponsors {
-  background: #ebe6dc;
+  background: #00569e;
   border-bottom: 1px solid #dedbce;
   border-top: 1px solid #dedbce;
   padding: 20px 0 80px 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 360px; }
   .sponsors h3 {
-    color: #4c3800;
+    color: white;
     margin: 0 0 30px; }
   .sponsors ul {
     list-style-type: none; }
@@ -421,6 +424,19 @@ cite {
       zoom: 1; }
     .sponsors ul li:last-child {
       margin-right: 0; }
+
+.superfeedr {
+  position: relative;
+  top: -13px; }
+
+.andyet {
+  position: relative;
+  top: -10px; }
+
+.cuistot {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: #ebe6dc; }
 
 .speakers ul {
   list-style-type: none;
@@ -526,7 +542,7 @@ cite {
       padding-left: 80px; }
 
 #what-is-it {
-  margin-top: -1px;
+  margin-top: 540px;
   padding-top: 20px; }
   #what-is-it h2 {
     margin-top: 0;
