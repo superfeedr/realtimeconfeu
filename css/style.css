@@ -934,3 +934,11 @@ footer {
 
   .mobile-hide {
     display: none !important; } }
+
+.speakers ul.guidelines {
+margin-left: 20px; padding-left: 10px;line-height: 130%; letter-spacing: 0.4px; margin-bottom: 30px; font-size: 1.25em;list-style-type: disc;
+}
+.speakers ul.guidelines>li {
+  background: none;
+  display: list-item; margin-left: 10px; width: 100%; margin-bottom: 5px;
+}
