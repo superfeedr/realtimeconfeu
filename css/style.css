@@ -482,10 +482,13 @@ cite {
     .speakers ul .speakerDetails strong {
       display: block;
       font-size: 16px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: white; }
     .speakers ul .speakerDetails em {
+      margin-top: 5px;
       display: block;
-      color: #999999;
+      color: white;
       font-size: 12px;
       font-style: normal; }
     .speakers ul .speakerDetails a {
