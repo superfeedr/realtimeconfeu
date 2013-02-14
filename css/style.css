@@ -168,17 +168,18 @@ body {
   body {
     font-size: 1.125em; } }
 .teal {
-  color: #20bedb; }
+  color: #0c5b99; }
 
 body {
-  background: #111111;
+  background: #043867;
   font-family: "franklin-gothic-urw-1", "franklin-gothic-urw-2", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  min-width: 60em; }
 
 a {
-  color: #20bedb; }
+  color: #0c5b99; }
   a:hover {
-    color: #76d9eb; }
+    color: #1e92ed; }
 
 h2 {
   font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
@@ -186,9 +187,18 @@ h2 {
   font-size: 3.5em;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 1px 0 black;
   letter-spacing: 1px;
-  color: #e9e9e9;
+  color: #043867;
+  margin: 20px 0 25px; }
+
+h3 {
+  font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
+  font-weight: 100;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #0c5b99;
   margin: 20px 0 25px; }
 
 h4 {
@@ -203,18 +213,54 @@ h4 {
   margin: 0 auto; }
 
 header {
-  background: #21beda;
+  background: url(/images/headermap.png) top center no-repeat #eae6d5;
+  border-bottom: 1px solid #bcc9c9;
   display: block;
-  padding: 80px 0 78px 0; }
-  header h1 {
-    background: url(/images/realtimeconfeu.png);
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 216px;
+  height: 550px;
+  position: relative; }
+  header .banner {
+    background: rgba(101, 157, 201, 0.85);
+    box-shadow: 0 6px 2px -2px #cccccc;
+    height: 575px;
+    left: 50%;
+    margin: -5px 0 0 -30em;
+    position: absolute;
+    width: 360px; }
+    header .banner .when, header .banner .where {
+      color: white;
+      font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
+      font-size: 28px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 400px; }
+    header .banner .when {
+      left: 60px; }
+    header .banner .where {
+      right: 60px; }
+    header .banner a {
+      background: url(/images/ribbon-button.png) 0 0 no-repeat;
+      bottom: 35px;
+      color: white;
+      display: block;
+      font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
+      font-size: 50px;
+      height: 73px;
+      left: 50%;
+      line-height: 73px;
+      margin: 0 0 0 -162px;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 1px -1px 0 #bf9027;
+      text-transform: uppercase;
+      width: 324px; }
+      header .banner a:hover {
+        color: #00569e;
+        text-shadow: 1px 1px 0 white; }
+  header h1 img {
     display: block;
-    text-indent: -9999em;
-    margin: 0 auto;
-    _margin: 0 auto -50px; }
+    margin: 59px; }
   header #date {
     font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
     font-weight: 100;
@@ -225,8 +271,7 @@ header {
     height: 52px;
     display: block;
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0 1px 0 black; }
+    text-transform: uppercase; }
     header #date li {
       font-size: 2.5em !important;
       border-right: 3px solid #1caac4;
@@ -261,7 +306,6 @@ header {
       font-size: 2em;
       text-transform: uppercase;
       text-decoration: none;
-      text-shadow: 0 1px 0 black;
       vertical-align: top;
       outline: none; }
       header nav a:hover {
@@ -314,10 +358,8 @@ header {
         bevahior: url("css/pie.htc"); }
 
 #content {
-  background-color: #222222;
-  border-top: 1px solid #777777;
-  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
-  padding-top: 0px; }
+  background: white;
+  padding: 30px 0 100px; }
   #content .wrapper {
     font-size: 16px;
     white-space: nowrap; }
@@ -331,10 +373,9 @@ cite {
   font-size: 36px;
   font-style: normal;
   letter-spacing: 1px;
-  color: #fccf6a;
+  color: #6495be;
   text-transform: uppercase;
-  margin-left: 20px;
-  text-shadow: 0 -1px 0 #007cb5; }
+  margin-left: 20px; }
 
 #schedule, aside {
   display: inline-block;
@@ -352,24 +393,21 @@ cite {
 #info {
   text-align: center; }
 
-.speakers {
-  background: url(/images/section-bottom-shadow.png) bottom left no-repeat;
-  border-bottom: 2px solid black;
-  border-top: 0;
-  padding: 80px 0 20px 0; }
-
 .sponsors {
-  background: url(/images/section-bottom-shadow.png) bottom left no-repeat;
-  border-top: 1px solid #404040;
-  border-bottom: 2px solid black;
+  background: #00569e;
+  border-bottom: 1px solid #dedbce;
+  border-top: 1px solid #dedbce;
   padding: 20px 0 80px 0;
-  margin: 0 auto; }
-  .sponsors p {
-    color: #666666;
-    font-size: 1em !important; }
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 360px; }
+  .sponsors h3 {
+    color: white;
+    margin: 0 0 30px; }
   .sponsors ul {
-    list-style-type: none;
-  }
+    list-style-type: none; }
     .sponsors ul li {
       display: inline-block;
       *display: inline;
@@ -379,7 +417,6 @@ cite {
       margin-top: 0;
       padding-top: 0; }
       .sponsors ul li img {
-      vertical-align: middle;
         margin-top: 0;
         padding-top: 0; }
     .sponsors ul li {
@@ -387,34 +424,37 @@ cite {
       zoom: 1; }
     .sponsors ul li:last-child {
       margin-right: 0; }
-    .sponsors ul.chef li {
-    }
-    .sponsors ul.cuisinier li {
 
-    }
-    .sponsors ul.cuistot li {
-      vertical-align: middle;
-      width: 200px;
-    }
+.superfeedr {
+  position: relative;
+  top: -13px; }
+
+.andyet {
+  position: relative;
+  top: -10px; }
+
+.cuistot {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: #ebe6dc; }
 
 .speakers ul {
   list-style-type: none;
   text-align: left;
-  margin: 0 10px 20px; }
+  margin: 0 -10px 20px; }
+  .speakers ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; }
   .speakers ul > li {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    margin-bottom: 30px; }
-  .speakers ul li {
-    *display: inline;
+    background: #00569e;
+    display: block;
+    float: left;
+    margin: 1.25em;
+    width: 17.5em;
     zoom: 1; }
-    .speakers ul li.right {
-      text-align: right; }
-      .speakers ul li.right img {
-        float: right; }
-    .speakers ul li:nth-child(4n) {
-      margin-left: 10px; }
   .speakers ul div, .speakers ul img {
     display: inline-block;
     *display: inline;
@@ -423,9 +463,7 @@ cite {
   .speakers ul img {
     width: 80px;
     height: 80px;
-    background-color: #111111;
-    border-bottom: 1px solid #333333;
-    border-top: 1px solid #111111; }
+    background-color: #111111; }
   .speakers ul svg {
     width: 16px;
     height: 16px;
@@ -437,22 +475,24 @@ cite {
       .speakers ul svg path:hover {
         fill: #cccccc; }
   .speakers ul .speakerDetails {
-    width: 120px;
-    padding: 0 5px;
-    text-shadow: 0 1px 0 black;
-    color: #cecece;
-    line-height: 115%;
-    margin-top: -2px; }
+    padding: 0 10px;
+    color: #ebe6dc;
+    line-height: 16px;
+    margin-top: 10px; }
     .speakers ul .speakerDetails strong {
       display: block;
       font-size: 16px;
-      line-height: 140%;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: white; }
     .speakers ul .speakerDetails em {
+      margin-top: 5px;
       display: block;
-      color: #999999;
+      color: white;
       font-size: 12px;
       font-style: normal; }
+    .speakers ul .speakerDetails a {
+      color: #face82; }
   .speakers ul .social-link {
     text-decoration: none; }
 
@@ -469,15 +509,15 @@ cite {
     height: 11px; }
 
 #view_abstracts {
-  color: #20bedb;
+  color: #0c5b99;
   text-align: center; }
   #view_abstracts:hover {
-    color: #76d9eb; }
+    color: #1e92ed; }
 
-#details, #what-is-it, #venue, #redisconf {
-  color: #eeeeee;
+#details, #what-is-it, #venue {
+  color: #725e47;
   margin: 0 10px; }
-  #details p, #what-is-it p, #venue p, #redisconf p {
+  #details p, #what-is-it p, #venue p {
     line-height: 130%;
     letter-spacing: 0.4px;
     margin-bottom: 30px;
@@ -500,42 +540,43 @@ cite {
     display: inline-block;
     float: left; }
     #details div.blue-ribbon span.quote {
-      text-shadow: 0 -1px 0 #007cb5;
       font-size: 32px;
       font-weight: bold;
       padding-left: 80px; }
 
-#what-is-it, #redisconf {
-  background: url(/images/section-bottom-shadow.png) bottom left no-repeat, url(/images/section-top-glow.png) top left no-repeat;
-  margin-top: -1px;
+#what-is-it {
+  margin-top: 540px;
   padding-top: 20px; }
-  #what-is-it h2, #redisconf h2 {
+  #what-is-it h2 {
     margin-top: 0;
     font-weight: bold; }
-  #what-is-it .block, #redisconf .block {
+  #what-is-it .block {
     padding-bottom: 30px; }
-    #what-is-it .block.half, #redisconf .block.half {
+    #what-is-it .block.half {
       width: 450px;
       float: left;
       padding-left: 20px; }
-      #what-is-it .block.half h3, #redisconf .block.half h3 {
-        color: #fccf6a;
+      #what-is-it .block.half h3 {
+        color: #d29815;
         font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
         font-weight: bold;
-        font-size: 2.5em;
+        font-size: 2em;
         letter-spacing: 1px;
-        text-shadow: 0 1px 0 black;
         text-align: center;
         width: 100%;
         margin-bottom: 20px; }
 
 #signup {
-  width: 100%;
+  background: #0c5b99;
+  color: #ebe6dc;
   text-align: center;
   clear: both;
-  padding-bottom: 20px;
-  border-bottom: 2px solid black;
-  background: url(/images/section-bottom-shadow.png) bottom left no-repeat; }
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-bottom: 2px solid #dedbce; }
+  #signup a {
+    color: white; }
   #signup form {
     position: relative; }
   #signup label {
@@ -544,7 +585,6 @@ cite {
     font-size: 32px;
     font-weight: normal;
     letter-spacing: 1px;
-    text-shadow: 0 1px 0 black;
     line-height: 34px;
     margin-right: 15px;
     vertical-align: middle; }
@@ -561,7 +601,8 @@ cite {
     vertical-align: top;
     margin-top: 4px;
     margin-right: 10px; }
-  #signup input[type="submit"], #signup input[type="button"] {
+  #signup input[type="button"],
+  #signup input[type="submit"] {
     width: 120px;
     height: 40px;
     line-height: 34px;
@@ -580,22 +621,19 @@ cite {
     font-weight: 100;
     font-size: 30px;
     text-transform: uppercase;
-    text-shadow: 0 1px 0 black;
     letter-spacing: 0.5px;
     border-radius: 7px;
     bevahior: url("css/pie.htc"); }
 
 #people-say-video {
+  background: #ebe6dc;
   margin: 0 10px;
-  border-top: 1px solid #404040;
-  border-bottom: 2px solid black;
   position: relative; }
   #people-say-video blockquote {
-    color: white;
-    text-shadow: 0 -1px 0 #007cb5;
+    color: #4c3010;
     font-size: 32px;
     font-weight: bold;
-    padding: 30px 50px 0 0;
+    padding: 25px;
     width: 450px;
     float: left; }
   #people-say-video cite {
@@ -610,34 +648,13 @@ cite {
     bottom: 20px;
     right: 460px;
     text-transform: uppercase;
-    text-shadow: 0 -1px 0 #007cb5;
     background: url(/images/see-for-yourself.png) top left no-repeat;
     line-height: 53px;
     height: 56px;
     width: 250px; }
 
-#redisconf {
-  background: url(/images/section-top-glow.png) top left no-repeat, url(/images/section-bottom-shadow.png) bottom left no-repeat;
-  float: left;
-  clear: both;
-  padding-top: 40px;
-  margin-top: 0;
-  border-bottom: 2px solid black; }
-  #redisconf img {
-    margin: -40px auto 0; }
-  #redisconf h2 {
-    width: 300px;
-    height: 300px;
-    background: url(/images/redisconf_logo.png) no-repeat top left;
-    background-size: contain;
-    text-indent: -999em;
-    margin: -40px auto 0; }
-  #redisconf .block {
-    padding-bottom: 10px; }
-
 #venue {
-  background: url(/images/section-bottom-shadow.png) bottom left no-repeat, url(/images/section-top-glow.png) top left no-repeat;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #dedbce;
   padding-bottom: 30px;
   padding-top: 30px;
   margin: 0 10px;
@@ -649,12 +666,11 @@ cite {
     margin-right: 30px;
     margin-bottom: 20px; }
   #venue h3 {
-    color: #fccf6a;
+    color: #d29815;
     font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
     font-weight: 100;
     font-size: 2.2em;
     letter-spacing: 1px;
-    text-shadow: 0 1px 0 black;
     margin-bottom: 10px; }
   #venue p {
     font-size: 1.15em; }
@@ -663,24 +679,12 @@ cite {
       font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
       font-size: 2em; }
 
-#details {
-  }
-  #details h3 {
-    color: #fccf6a;
-    font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
-    font-weight: 100;
-    font-size: 2.2em;
-    letter-spacing: 1px;
-    text-shadow: 0 1px 0 black;
-    margin-bottom: 10px; }
-
-
 #kyle_quote {
   clear: both;
   padding: 20px 0;
   margin: 0 10px;
   position: relative;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #dedbce;
   width: 940px;
   overflow: visible; }
   #kyle_quote blockquote {
@@ -692,43 +696,40 @@ cite {
     font-weight: bold;
     margin-left: -20px;
     padding-left: 50px;
-    padding-top: 10px;
-    text-shadow: 0 -1px 0 #007cb5; }
+    padding-top: 10px; }
     #kyle_quote blockquote cite {
       display: block;
       position: absolute;
       right: 25px;
-      top: 90px;
-      text-shadow: 0 -1px 0 #007cb5; }
+      top: 90px; }
 
 #from_the_blog {
-  background: url(/images/section-bottom-shadow.png) bottom left no-repeat, url(/images/section-top-glow.png) top left no-repeat;
-  border-top: 1px solid #404040;
-  border-bottom: 2px solid black;
-  margin: 0 10px;
+  background: #ebe6dc;
+  border-bottom: 1px solid #dedbce;
+  margin: 0 10px 60px;
   clear: both;
-  position: relative;
-  height: 145px; }
+  padding: 20px 0; }
+  #from_the_blog:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; }
   #from_the_blog h2 {
-    width: 450px;
-    padding-right: 20px;
-    display: inline-block;
+    float: left;
+    margin: 0;
     text-align: right;
-    line-height: 145px;
-    margin: 0; }
+    width: 33%; }
   #from_the_blog ul.blog_listing {
-    list-style-type: none;
-    position: absolute;
-    left: 490px;
-    top: 20px; }
+    float: right;
+    width: 67%; }
     #from_the_blog ul.blog_listing li {
       color: #eeeeee;
-      padding: 8px 0;
-      font-size: 1.1em; }
+      font-size: 1.1em;
+      list-style: none;
+      padding: 5px 30px; }
 
 #geoff_quote, #sponsor-info {
-  border-top: 1px solid #404040;
-  border-bottom: 2px solid black;
   margin: 1px 10px 0;
   clear: both;
   position: relative;
@@ -741,8 +742,7 @@ cite {
     top: 78px;
     color: white;
     font-size: 2em;
-    font-weight: bold;
-    text-shadow: 0 -1px 0 #007cb5; }
+    font-weight: bold; }
     #geoff_quote blockquote cite, #sponsor-info blockquote cite {
       display: block;
       margin: 10px 0; }
@@ -750,89 +750,66 @@ cite {
 #sponsor-info {
   height: auto;
   padding-bottom: 40px; }
+  #sponsor-info h2 {
+    border-bottom: 1px solid #dedbce; }
   #sponsor-info h4 {
-    color: #dddddd;
+    color: #725e47;
     font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif; }
 
+#geoff_quote, #mike_quote {
+  background: #ebe6dc; }
+  #geoff_quote blockquote, #mike_quote blockquote {
+    color: #4c3010; }
+
 #mike_quote {
-  background: url(/images/section-top-glow.png) top left no-repeat;
-  border-top: 1px solid #404040;
+  border-bottom: 1px solid #dedbce;
+  border-top: 1px solid #dedbce;
   text-align: center;
-  padding: 100px 30px 20px;
-  margin: 0 10px; }
+  padding: 20px 30px;
+  margin: 30px 10px; }
   #mike_quote blockquote {
-    color: white;
     font-size: 2em;
-    font-weight: bold;
-    text-shadow: 0 -1px 0 #007cb5; }
+    font-weight: bold; }
     #mike_quote blockquote cite {
       display: block;
-      margin: 10px auto 0; }
+      margin: 10px 0; }
 
 footer {
+  border-top: 1px solid #043867;
   clear: both;
-  background-image: url("http://static.realtimeconf.com/images/footer_bg.jpg");
-  background-repeat: repeat-x;
-  overflow-y: hidden;
-  margin-bottom: 60px; }
+  padding: 0 0 60px; }
   footer .wrapper {
-    background-image: url("http://static.realtimeconf.com/images/footer.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    height: 220px;
     display: block;
     position: relative; }
-  footer h5 {
-    width: 300px;
-    height: 80px;
+  footer .ticket {
+    background: url(/images/ribbon-button.png) 0 0 no-repeat;
+    color: white;
     display: block;
-    background: #d9a302;
-    background: linear-gradient(top, #edc85d 0%, #d9a302 100%);
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -150px;
-    box-shadow: 0 2px 2px black;
-    bevahior: url("css/pie.htc");
-    line-height: 75px;
-    color: #eeeeee;
-    letter-spacing: 1px;
-    text-align: center;
-    text-shadow: 0 -1px 0px #999999;
-    text-transform: uppercase;
-    border-radius: 80px;
-    border-top: 1px solid white;
     font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
-    font-size: 3.75em;
-    font-weight: normal; }
-    footer h5 a {
-      color: #eeeeee;
-      text-decoration: none; }
-      footer h5 a:hover {
-        color: white; }
+    font-size: 50px;
+    height: 73px;
+    left: 50%;
+    line-height: 73px;
+    margin: -40px auto 100px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px -1px 0 #bf9027;
+    text-transform: uppercase;
+    width: 324px; }
+    footer .ticket:hover {
+      color: #00569e;
+      text-shadow: 1px 1px 0 white; }
+  footer h2 {
+    color: white; }
   footer p {
-    color: #eeeeee;
-    position: relative;
-    top: 130px;
-    text-align: center; }
-  footer .wrapper + .wrapper {
-    height: auto;
-    background: none;
-    padding-bottom: 50px;
-    border-top: 2px solid #111111;
-    background: url(/images/section-top-glow.png) top left no-repeat; }
-    footer .wrapper + .wrapper h2 {
-      color: #cccccc;
-      text-shadow: 0 1px 1px #444444;
-      margin: 40px 0 25px;
-      font-weight: bold;
-      font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif; }
-    footer .wrapper + .wrapper p {
-      top: 0;
-      color: #999999;
-      padding: 0 130px;
-      line-height: 140%;
-      font-size: 1.1em; }
+    top: 0;
+    color: #dedbce;
+    padding: 0 130px;
+    line-height: 140%;
+    font-size: 1.1em; }
+  footer a {
+    color: white; }
 
 .ie8 footer em a {
   float: right !important; }
@@ -840,33 +817,11 @@ footer {
 .ie9 footer em a {
   float: none !important; }
 
-#from_andyet {
-  background: #eeeeee;
-  bottom: 0;
-  box-shadow: 0 0 3px black;
-  right: 50px;
-  padding: 3px 10px;
-  position: fixed;
-  text-decoration: none;
-  outline: 0;
-  border-top: 1px solid white; }
-  #from_andyet h2 {
-    background-image: url("http://static.realtimeconf.com/images/from_&yet.png");
-    background-repeat: no-repeat;
-    height: 27px;
-    line-height: 0;
-    text-indent: -9999em;
-    width: 79px;
-    margin: 0;
-    border: 0;
-    text-decoration: none;
-    box-shadow: 0 0 0 transparent; }
-
 .promo_vid {
   margin-bottom: -2px; }
 
 @media only screen and (max-width: 767px) {
-  body, header, .wrapper, header h1, header #date, header nav, #what-is-it .block.half, #what-is-it h3, #kyle_quote, #kyle_quote blockquote, img, .promo_vid, #from_the_blog h2, #people-say-video blockquote, #redisconf .block.half {
+  body, header, .wrapper, header h1, header #date, header nav, #what-is-it .block.half, #what-is-it h3, #kyle_quote, #kyle_quote blockquote, img, .promo_vid, #from_the_blog h2, #people-say-video blockquote {
     width: 100%;
     padding-left: 0;
     padding-right: 0; }
@@ -894,15 +849,7 @@ footer {
   #info + img, #details div.blue-ribbon {
     display: none; }
 
-  .speakers ul {
-    margin: 0; }
-    .speakers ul > li {
-      width: 100%;
-      text-align: center; }
-      .speakers ul > li .speakerDetails {
-        text-align: left; }
-
-  #details, #what-is-it, #venue, #from_the_blog, #geoff_quote, #mike_quote, #people-say-video, #kyle_quote, #redisconf {
+  #details, #what-is-it, #venue, #from_the_blog, #geoff_quote, #mike_quote, #people-say-video, #kyle_quote {
     margin: 0;
     clear: both; }
 
@@ -938,9 +885,6 @@ footer {
         position: relative;
         top: 0;
         right: 0; }
-
-  #redisconf h2 {
-    width: 250px; }
 
   #from_the_blog {
     height: auto; }
