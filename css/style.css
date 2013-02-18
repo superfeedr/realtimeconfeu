@@ -436,7 +436,7 @@ cite {
 .cuistot {
   margin-top: 20px;
   padding: 20px 0;
-  background: #ebe6dc; }
+  background: white; }
 
 
 .speakers ul {
@@ -515,14 +515,22 @@ cite {
   #view_abstracts:hover {
     color: #1e92ed; }
 
-#details, #what-is-it, #venue {
+#details, #what-is-it, #venue, #intro {
   color: #725e47;
   margin: 0 10px; }
-  #details p, #what-is-it p, #venue p {
+  #details p, #what-is-it p, #venue p, #intro p {
     line-height: 130%;
     letter-spacing: 0.4px;
     margin-bottom: 30px;
     font-size: 1.25em; }
+
+#intro {
+  margin-top: 50px;
+  text-align: center; }
+  #intro blockquote {
+    height: 100px;
+    background: url(/images/blue_ribbon.png) top center no-repeat ;
+  }
 
 #details #panel-discussion {
   position: relative;
@@ -569,7 +577,6 @@ cite {
 
 #signup {
   background: #0c5b99;
-  color: #ebe6dc;
   text-align: center;
   clear: both;
   line-height: 1.5em;
@@ -627,7 +634,6 @@ cite {
     bevahior: url("css/pie.htc"); }
 
 #people-say-video {
-  background: #ebe6dc;
   margin: 0 10px;
   position: relative; }
   #people-say-video blockquote {
@@ -705,7 +711,6 @@ cite {
       top: 90px; }
 
 #from_the_blog {
-  background: #ebe6dc;
   border-bottom: 1px solid #dedbce;
   margin: 0 10px 60px;
   clear: both;
@@ -758,7 +763,7 @@ cite {
     font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif; }
 
 #geoff_quote, #mike_quote {
-  background: #ebe6dc; }
+  }
   #geoff_quote blockquote, #mike_quote blockquote {
     color: #4c3010; }
 
