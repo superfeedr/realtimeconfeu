@@ -527,9 +527,21 @@ cite {
 #intro {
   margin-top: 50px;
   text-align: center; }
+  #intro p {
+    font-size: 2.0em;
+    font-weight: bold;
+  }
+  #intro img {
+    margin-bottom: 20px;
+  }
   #intro blockquote {
-    height: 100px;
     background: url(/images/blue_ribbon.png) top center no-repeat ;
+    height: 70px;
+    line-height: 70px;
+    font-size: 2.5em;
+    font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
+    color: white;
+    text-transform: uppercase;
   }
 
 #details #panel-discussion {
