@@ -599,6 +599,7 @@ cite {
     position: relative; }
   #signup label {
     text-transform: uppercase;
+    color: white;
     font-family: "franklin-gothic-ext-comp-urw-1", "franklin-gothic-ext-comp-urw-2", sans-serif;
     font-size: 32px;
     font-weight: normal;
