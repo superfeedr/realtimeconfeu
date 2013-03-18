@@ -563,6 +563,10 @@ cite {
       font-weight: bold;
       padding-left: 80px; }
 
+.block {
+  text-align: left;
+}
+
 #what-is-it {
   margin-top: 540px;
   padding-top: 20px; }
