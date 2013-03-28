@@ -398,11 +398,7 @@ cite {
   border-bottom: 1px solid #dedbce;
   border-top: 1px solid #dedbce;
   padding: 20px 0 80px 0;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  position: absolute;
-  height: 360px; }
+  }
   .sponsors h3 {
     color: white;
     margin: 0 0 30px; }
@@ -410,14 +406,10 @@ cite {
     list-style-type: none; }
     .sponsors ul li {
       display: inline-block;
-      *display: inline;
-      zoom: 1;
-      font-size: 16px;
-      margin-right: 30px;
-      margin-top: 0;
-      padding-top: 0; }
+      vertical-align:middle;
+    }
       .sponsors ul li img {
-        margin-top: 0;
+        margin: 0px 15px;
         padding-top: 0; }
     .sponsors ul li {
       *display: inline;
@@ -425,18 +417,15 @@ cite {
     .sponsors ul li:last-child {
       margin-right: 0; }
 
-.superfeedr {
-  position: relative;
-  top: -13px; }
-
-.andyet {
-  position: relative;
-  top: -10px; }
-
 .cuistot {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   padding: 20px 0;
   background: white; }
+  .cuistot img {
+    max-width: 180px;
+  }
 
 
 .speakers ul {
@@ -568,7 +557,6 @@ cite {
 }
 
 #what-is-it {
-  margin-top: 540px;
   padding-top: 20px; }
   #what-is-it h2 {
     margin-top: 0;
