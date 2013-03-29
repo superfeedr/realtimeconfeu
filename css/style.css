@@ -417,6 +417,26 @@ cite {
     .sponsors ul li:last-child {
       margin-right: 0; }
 
+
+.chef {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 20px 0;
+  background: white; }
+  .chef img {
+    max-width: 600px;
+  }
+
+.cuisinier {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 20px 0; }
+  .cuisinier img {
+    max-width: 200px;
+  }
+
 .cuistot {
   margin-left: auto;
   margin-right: auto;
@@ -424,7 +444,7 @@ cite {
   padding: 20px 0;
   background: white; }
   .cuistot img {
-    max-width: 180px;
+    max-width: 150px;
   }
 
 
